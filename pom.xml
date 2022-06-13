@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.brihaspathee.artemis</groupId>
     <artifactId>api-gateway</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>api-gateway</name>
     <description>api-gateway</description>
     <url>http://www.brihaspathee.com</url>
@@ -31,7 +31,7 @@
         <!--        <developerConnection>scm:git:ssh://github.com:Artemis-2-0/api-gateway.git</developerConnection>-->
         <developerConnection>scm:git:git@github.com:Artemis-2-0/api-gateway.git</developerConnection>
         <url>scm:git:http://github.com/Artemis-2-0/api-gateway</url>
-        <tag>api-gateway-0.0.1</tag>
+        <tag>aaccount-management-1.0.0</tag>
     </scm>
 
     <developers>
