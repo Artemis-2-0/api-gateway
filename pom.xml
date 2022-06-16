@@ -97,11 +97,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-   <!--     <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <scope>test</scope>
-        </dependency>-->
+        <dependency>
+            <groupId>com.brihaspathee.artemis</groupId>
+            <artifactId>artemis-library</artifactId>
+            <version>1.0.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--     <dependency>
+                 <groupId>org.springframework.security</groupId>
+                 <artifactId>spring-security-test</artifactId>
+                 <scope>test</scope>
+             </dependency>-->
     </dependencies>
 
     <build>
