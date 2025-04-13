@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: optional:configserver:http://localhost:6090
+  cloud:
+    gateway:
+      routes:
+        - id: account-management
+          uri: lb:http://MEMBER-MANAGEMENT
+          predicates:
+            - Path=/api/v1/artemis/account/secured/**
+          filters: []
+        - id: account-management-public
+          uri: lb:http://MEMBER-MANAGEMENT
+          predicates:
+            - Path=/api/v1/artemis/account/public/**
+          filters: []
