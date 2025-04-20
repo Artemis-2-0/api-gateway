@@ -134,4 +134,18 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "✅ Version update pushed successfully."
+# Define variables to push image to docker hub
+IMAGE_NAME="api-gateway"
+DOCKER_ORG="artemisprogetto"
+TAG="latest"
+
+# Build the Docker image
+docker build -t ${IMAGE_NAME} .
+
+# Tag the image with the organization and repository
+docker tag ${IMAGE_NAME}:latest ${DOCKER_ORG}/${IMAGE_NAME}:${TAG}
+
+# Push the image to Docker Hub
+docker push ${DOCKER_ORG}/${IMAGE_NAME}:${TAG}
+echo "✅ Docker Image pushed successfully."
 echo "🎉 Deployment process completed!"
