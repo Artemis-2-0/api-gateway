@@ -1,0 +1,268 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules
+[INFO] Installing Central Publishing features
+[INFO] 
+[INFO] ----------------< com.brihaspathee.artemis:api-gateway >----------------
+[INFO] Building api-gateway 2.0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.4.1:clean (default-clean) @ api-gateway ---
+[INFO] Deleting /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ api-gateway ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ api-gateway ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 6 source files with javac [debug parameters release 21] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ api-gateway ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ api-gateway ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ api-gateway ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.brihaspathee.artemis.ApiGatewayApplicationTests
+18:06:25.433 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.brihaspathee.artemis.ApiGatewayApplicationTests]: ApiGatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:06:25.489 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.brihaspathee.artemis.ApiGatewayApplication for test class com.brihaspathee.artemis.ApiGatewayApplicationTests
+18:06:25.547 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+18:06:25.549 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+18:06:25.570 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.20.6
+18:06:25.684 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+18:06:25.832 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+18:06:25.832 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+18:06:25.859 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 7937 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/balaji/Library/Containers/com.docker.docker/Data/docker-cli.sock
+18:06:25.889 [main] INFO tc.testcontainers/ryuk:0.11.0 -- Creating container for image: testcontainers/ryuk:0.11.0
+18:06:26.126 [main] INFO tc.testcontainers/ryuk:0.11.0 -- Container testcontainers/ryuk:0.11.0 is starting: 4c9e4fefe23796848440777984015fca5f99d33140ce401c26d240bb85e222a1
+18:06:26.639 [main] INFO tc.testcontainers/ryuk:0.11.0 -- Container testcontainers/ryuk:0.11.0 started in PT0.749798S
+18:06:26.647 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+18:06:26.647 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+18:06:26.648 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+18:06:26.649 [main] INFO tc.postgres:15 -- Creating container for image: postgres:15
+18:06:26.708 [main] INFO tc.postgres:15 -- Container postgres:15 is starting: 6cb9d5c677d312f9c353ab3b4afe70876c84dcdd005307dd2727fa083cdd512b
+18:06:27.990 [main] INFO tc.postgres:15 -- Container postgres:15 started in PT1.340967S
+18:06:27.993 [main] INFO tc.postgres:15 -- Container is started (JDBC URL: jdbc:postgresql://localhost:63201/artemis_gatewaydb?loggerLevel=OFF)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-20T18:06:28.327-04:00  INFO 50191 --- [api-gateway] [           main] c.b.artemis.ApiGatewayApplicationTests   : Starting ApiGatewayApplicationTests using Java 21.0.3 with PID 50191 (started by balaji in /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway)
+2025-04-20T18:06:28.328-04:00  INFO 50191 --- [api-gateway] [           main] c.b.artemis.ApiGatewayApplicationTests   : The following 1 profile is active: "unit-test"
+2025-04-20T18:06:28.924-04:00  INFO 50191 --- [api-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20T18:06:28.989-04:00  INFO 50191 --- [api-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2025-04-20T18:06:29.053-04:00  INFO 50191 --- [api-gateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9a1f2f12-5fba-300a-a7eb-251f15a0773a
+2025-04-20T18:06:29.303-04:00  INFO 50191 --- [api-gateway] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20T18:06:29.329-04:00  INFO 50191 --- [api-gateway] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-20T18:06:29.355-04:00  INFO 50191 --- [api-gateway] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-20T18:06:29.474-04:00  INFO 50191 --- [api-gateway] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20T18:06:29.487-04:00  INFO 50191 --- [api-gateway] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-20T18:06:29.629-04:00  INFO 50191 --- [api-gateway] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47f5ab58
+2025-04-20T18:06:29.630-04:00  INFO 50191 --- [api-gateway] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-20T18:06:29.646-04:00  WARN 50191 --- [api-gateway] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20T18:06:29.657-04:00  INFO 50191 --- [api-gateway] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-20T18:06:30.093-04:00  INFO 50191 --- [api-gateway] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table routes (id integer not null, enabled boolean not null, filters TEXT not null, predicates TEXT not null, route_id varchar(255) not null, uri varchar(255) not null, primary key (id))
+Hibernate: alter table if exists routes drop constraint if exists UKimsifeueabdopwqxo5gx0gyiq
+2025-04-20T18:06:30.116-04:00  WARN 50191 --- [api-gateway] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-04-20T18:06:30.116-04:00  WARN 50191 --- [api-gateway] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukimsifeueabdopwqxo5gx0gyiq" of relation "routes" does not exist, skipping
+Hibernate: alter table if exists routes add constraint UKimsifeueabdopwqxo5gx0gyiq unique (route_id)
+Hibernate: create sequence routes_seq start with 1 increment by 50
+2025-04-20T18:06:30.121-04:00  INFO 50191 --- [api-gateway] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-04-20T18:06:30.712-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-04-20T18:06:30.713-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-04-20T18:06:30.713-04:00  INFO 50191 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-04-20T18:06:30.865-04:00  INFO 50191 --- [api-gateway] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-20T18:06:31.062-04:00  INFO 50191 --- [api-gateway] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-20T18:06:31.090-04:00  WARN 50191 --- [api-gateway] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20T18:06:31.159-04:00 ERROR 50191 --- [api-gateway] [           main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-04-20T18:06:31.184-04:00  INFO 50191 --- [api-gateway] [           main] c.b.a.r.ArtemisRouteDefinitionRepository : Getting all routes...
+Hibernate: select r1_0.id,r1_0.enabled,r1_0.filters,r1_0.predicates,r1_0.route_id,r1_0.uri from routes r1_0 where r1_0.enabled
+2025-04-20T18:06:31.262-04:00  INFO 50191 --- [api-gateway] [           main] c.b.a.r.ArtemisRouteDefinitionRepository : Getting all routes...
+Hibernate: select r1_0.id,r1_0.enabled,r1_0.filters,r1_0.predicates,r1_0.route_id,r1_0.uri from routes r1_0 where r1_0.enabled
+2025-04-20T18:06:31.266-04:00  INFO 50191 --- [api-gateway] [           main] c.b.artemis.ApiGatewayApplicationTests   : Started ApiGatewayApplicationTests in 3.127 seconds (process running for 6.246)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/Users/balaji/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.517 s -- in com.brihaspathee.artemis.ApiGatewayApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ api-gateway ---
+[INFO] Building jar: /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.4.4:repackage (repackage) @ api-gateway ---
+[INFO] Replacing main artifact /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar.original
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar-no-fork (attach-sources) @ api-gateway ---
+[INFO] Building jar: /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-sources.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:3.3.0:jar (attach-javadocs) @ api-gateway ---
+[ERROR] Error fetching link: /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/javadoc-bundle-options. Ignored it.
+[INFO] No previous run data found, generating javadoc.
+[WARNING] Javadoc Warnings
+[WARNING] Loading source files for package com.brihaspathee.artemis.route...
+[WARNING] Loading source files for package com.brihaspathee.artemis.scheduler...
+[WARNING] Loading source files for package com.brihaspathee.artemis...
+[WARNING] Loading source files for package com.brihaspathee.artemis.filter...
+[WARNING] Loading source files for package com.brihaspathee.artemis.domain.repository...
+[WARNING] Loading source files for package com.brihaspathee.artemis.domain.entity...
+[WARNING] Constructing Javadoc information...
+[WARNING] Building index for all the packages and classes...
+[WARNING] Standard Doclet version 21.0.3+7-LTS-152
+[WARNING] Building tree for all the packages and classes...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/ApiGatewayApplication.html...
+[WARNING] /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/src/main/java/com/brihaspathee/artemis/ApiGatewayApplication.java:7: warning: no comment
+[WARNING] public class ApiGatewayApplication {
+[WARNING] ^
+[WARNING] /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/src/main/java/com/brihaspathee/artemis/ApiGatewayApplication.java:7: warning: use of default constructor, which does not provide a comment
+[WARNING] public class ApiGatewayApplication {
+[WARNING] ^
+[WARNING] /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/src/main/java/com/brihaspathee/artemis/ApiGatewayApplication.java:9: warning: no comment
+[WARNING] public static void main(String[] args) {
+[WARNING] ^
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/route/ArtemisRouteDefinitionRepository.html...
+[WARNING] /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/src/main/java/com/brihaspathee/artemis/route/ArtemisRouteDefinitionRepository.java:31: warning: use of default constructor, which does not provide a comment
+[WARNING] public class ArtemisRouteDefinitionRepository implements RouteDefinitionRepository {
+[WARNING] ^
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/scheduler/ArtemisRouteRefresher.html...
+[WARNING] /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/src/main/java/com/brihaspathee/artemis/scheduler/ArtemisRouteRefresher.java:22: warning: use of default constructor, which does not provide a comment
+[WARNING] public class ArtemisRouteRefresher {
+[WARNING] ^
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/filter/AuthenticationFilter.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/filter/AuthenticationFilter.Config.html...
+[WARNING] /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/src/main/java/com/brihaspathee/artemis/filter/AuthenticationFilter.java:210: warning: no comment
+[WARNING] public Config() {}
+[WARNING] ^
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/entity/Route.html...
+[WARNING] /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/src/main/java/com/brihaspathee/artemis/domain/entity/Route.java:22: warning: use of default constructor, which does not provide a comment
+[WARNING] public class Route {
+[WARNING] ^
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/repository/RouteRepository.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/package-summary.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/package-tree.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/entity/package-summary.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/entity/package-tree.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/repository/package-summary.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/repository/package-tree.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/filter/package-summary.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/filter/package-tree.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/route/package-summary.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/route/package-tree.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/scheduler/package-summary.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/scheduler/package-tree.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/route/class-use/ArtemisRouteDefinitionRepository.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/scheduler/class-use/ArtemisRouteRefresher.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/class-use/ApiGatewayApplication.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/filter/class-use/AuthenticationFilter.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/filter/class-use/AuthenticationFilter.Config.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/repository/class-use/RouteRepository.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/entity/class-use/Route.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/package-use.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/entity/package-use.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/domain/repository/package-use.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/filter/package-use.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/route/package-use.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/com/brihaspathee/artemis/scheduler/package-use.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/overview-tree.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/index.html...
+[WARNING] Building index for all classes...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/allclasses-index.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/allpackages-index.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/index-all.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/search.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/overview-summary.html...
+[WARNING] Generating /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/apidocs/help-doc.html...
+[WARNING] 7 warnings
+[INFO] Building jar: /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-javadoc.jar
+[INFO] 
+[INFO] --- maven-gpg-plugin:1.5:sign (sign-artifacts) @ api-gateway ---
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.4:install (default-install) @ api-gateway ---
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/pom.xml to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.pom
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.jar
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-sources.jar to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-sources.jar
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-javadoc.jar to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-javadoc.jar
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar.asc to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.jar.asc
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.pom.asc to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.pom.asc
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-sources.jar.asc to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-sources.jar.asc
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-javadoc.jar.asc to /Users/balaji/.m2/repository/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-javadoc.jar.asc
+[INFO] 
+[INFO] --- central-publishing-maven-plugin:0.6.0:publish (injected-central-publishing) @ api-gateway ---
+[INFO] Using Central baseUrl: https://central.sonatype.com
+[INFO] Using credentials from server id central in settings.xml
+[INFO] Using Usertoken auth, with namecode: PxBaSSrO
+[INFO] Staging 7 files
+[INFO] Staging /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.jar
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/pom.xml to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.pom
+[INFO] Staging /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-sources.jar
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-sources.jar to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-sources.jar
+[INFO] Staging /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-javadoc.jar
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-javadoc.jar to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-javadoc.jar
+[INFO] Staging /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar.asc
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.jar.asc to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.jar.asc
+[INFO] Staging /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.pom.asc
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1.pom.asc to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1.pom.asc
+[INFO] Staging /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-sources.jar.asc
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-sources.jar.asc to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-sources.jar.asc
+[INFO] Staging /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-javadoc.jar.asc
+[INFO] Installing /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/api-gateway-2.0.1-javadoc.jar.asc to /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/2.0.1/api-gateway-2.0.1-javadoc.jar.asc
+[INFO] Pre Bundling - deleted /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/com/brihaspathee/artemis/api-gateway/maven-metadata-central-staging.xml
+[INFO] Generate checksums for dir: com/brihaspathee/artemis/api-gateway/2.0.1
+[INFO] Going to create /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-publishing/central-bundle.zip by bundling content at /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging
+[INFO] Created bundle successfully /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-staging/central-bundle.zip
+[INFO] Going to upload /Users/balaji/Documents/mac-mini/Projects.nosync/artemis/services/api-gateway/target/central-publishing/central-bundle.zip
+[INFO] Uploaded bundle successfully, deployment name: Deployment, deploymentId: 2cb467c6-0a71-49c6-852a-24450c6b1b17. Deployment will require manual publishing
+[INFO] Waiting until Deployment 2cb467c6-0a71-49c6-852a-24450c6b1b17 is validated
+[INFO] Deployment 2cb467c6-0a71-49c6-852a-24450c6b1b17 has been validated. To finish publishing visit https://central.sonatype.com/publishing/deployments
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:25 min
+[INFO] Finished at: 2025-04-20T18:07:47-04:00
+[INFO] ------------------------------------------------------------------------
