@@ -136,16 +136,17 @@ fi
 echo "✅ Version update pushed successfully."
 # Define variables to push image to docker hub
 IMAGE_NAME="api-gateway"
-DOCKER_ORG="artemisprogetto"
+CONTAINER_REPO="ghcr.io"
+CONTAINER_ORG="artemis-2-0"
 TAG="latest"
 
 # Build the Docker image
 docker build -t ${IMAGE_NAME} .
 
 # Tag the image with the organization and repository
-docker tag ${IMAGE_NAME}:latest ${DOCKER_ORG}/${IMAGE_NAME}:${TAG}
+docker tag ${IMAGE_NAME}:latest ${CONTAINER_REPO}/${CONTAINER_ORG}/${IMAGE_NAME}:${TAG}
 
 # Push the image to Docker Hub
-docker push ${DOCKER_ORG}/${IMAGE_NAME}:${TAG}
+docker push ${CONTAINER_REPO}/${CONTAINER_ORG}/${IMAGE_NAME}:${TAG}
 echo "✅ Docker Image pushed successfully."
 echo "🎉 Deployment process completed!"

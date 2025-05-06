@@ -1,8 +1,10 @@
 package com.brihaspathee.artemis.filter;
 
+import com.brihaspathee.artemis.config.AuthServiceConfig;
 import com.brihaspathee.artemis.dto.auth.AuthorizationRequest;
 import com.brihaspathee.artemis.dto.auth.UserDto;
 import com.brihaspathee.artemis.web.response.ArtemisAPIResponse;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
@@ -72,16 +74,46 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
     @Value("${application.user-info.account-type}")
     private String accountTypeHeader;
 
+
+//    /**
+//     * The hostname or IP address of the authentication service.
+//     * This value is typically injected from the application's external configuration
+//     * using the key "application.auth-service.host".
+//     * It is used to establish communication with the authentication service.
+//     */
+//    @Value("${application.auth-service.host}")
+//    private final String authServiceHost;
+//
+//    /**
+//     * Represents the port on which the authentication service is running.
+//     *
+//     * The value is injected from the application configuration using the
+//     * property key "application.auth-service.port".
+//     *
+//     * This variable is typically used to define or configure the connection
+//     * to the authentication service.
+//     */
+//    @Value("${application.auth-service.port}")
+//    private final String authServicePort;
+
     /**
      * Constructs an instance of AuthenticationFilter with the provided WebClient.
      *
      * @param webClientBuilder the WebClient instance used for executing asynchronous
      *                  and non-blocking HTTP requests to external services.
      */
-    public AuthenticationFilter(WebClient.Builder webClientBuilder) {
+    public AuthenticationFilter(WebClient.Builder webClientBuilder,
+                                AuthServiceConfig authServiceConfig) {
         super(Config.class);
+        log.info("Auth Service Host: {}", authServiceConfig.getHost());
+        log.info("Auth Service Port: {}", authServiceConfig.getPort());
+        log.info("Username Header: {}", usernameHeader);
+        String authServiceUrl = String.format("http://%s:%s/api/v1/artemis/auth/secured",
+                authServiceConfig.getHost(),
+                authServiceConfig.getPort());
+        log.info("Auth Service URL: {}", authServiceUrl);
         this.webClient = webClientBuilder
-                .baseUrl("http://localhost:6094/api/v1/artemis/auth/secured")
+                .baseUrl(authServiceUrl)
                 .build();
     }
 
